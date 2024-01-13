@@ -32,6 +32,24 @@ import {
   jobit,
   tripguide,
   threejs,
+  kubernetes,
+  angular,
+  azure,
+  cpp,
+  csharp,
+  gradle,
+  java,
+  maven,
+  python,
+  sql,
+  desjardins,
+  groupeazur,
+  projetperso,
+  projet4,
+  colorization,
+  motscroises,
+  jeudecourse,
+  thiago
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -47,35 +65,36 @@ export const navLinks: TNavLink[] = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "pdf",
+    title: "PDF Resume",
+  },
+
 ];
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Fullstack Web Developer",
     icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "DevOps",
+    icon: mobile,
+  },
+  {
+    title: "AI specialization",
     icon: creator,
   },
 ];
 
 const technologies: TTechnology[] = [
   {
-    name: "HTML 5",
+    name: "HTML / CSS",
     icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
   },
   {
     name: "JavaScript",
@@ -86,19 +105,15 @@ const technologies: TTechnology[] = [
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "React",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Angular",
+    icon: angular,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
+    name: "Node",
     icon: nodejs,
   },
   {
@@ -106,74 +121,57 @@ const technologies: TTechnology[] = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
+  {
+    name: "Kubernetes",
+    icon: kubernetes,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Azure",
+    icon: azure,
+  },
+  {
+    name: "Java",
+    icon: java,
+  }
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Software Engineer",
+    companyName: "Desjardins",
+    icon: desjardins, // Replace with your actual icon variable
+    iconBg: "#383E56", // Replace with the desired background color
+    date: "2020 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Created multiple web apps using Angular / React, empowered by modern technologies like RxJs, NgRx, SASS, Web-Components, etc.",
+      "Used Java Spring Boot to create a Backend for Fronted (BFF) and Microservices connected to SQL Databases.",
+      "Deployed applications in Azure Cloud environments, from dev to production, using CI and CD tools like Concourse, Artifactory, Git.",
+      "Managed multiple Azure Kubernetes Servers (AKS) to assure stability and continuous delivery.",
+      "Implemented a custom layer of OpenId Connect protocol in our Liferay Portal to respect the company’s needs and enhance security.",
+      "Wrote unit tests and integration tests for both backend and frontend applications, with Jasmine, Karma, Selenium, and Junit."
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Software Engineer Intern",
+    companyName: "Groupe AZUR",
+    icon: groupeazur, // Replace with your actual icon variable
+    iconBg: "#E6DEDD", // Replace with the desired background color
+    date: "2018",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Participated in the development of professional web applications for IATA using Angular and HTML5.",
+      "Fixed multiple issues in the Backend, implemented in C# with .NET framework.",
+      "Worked with a big data SQL database containing 1M+ rows, while having to maintain efficient requests."
     ],
   },
 ];
@@ -181,94 +179,120 @@ const experiences: TExperience[] = [
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+      "Valentin is extremely motivated and focused on his work, while else being someone funny and enjoyable to have at the work place. ",
+    name: "Thiago Barbosa",
+    designation: "Sr Developer",
+    company: "Azur Group",
+    image: thiago,
+  }
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "Platform for Studying Together",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A personal project designed to facilitate collaborative study among Polytechnique students. The platform enables students to view and schedule their own revision sessions and labs work, fostering a community-based learning environment.",
     tags: [
       {
-        name: "react",
+        name: "Angular",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "MongoDB",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Node",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: projetperso,
     sourceCodeLink: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "FPGA Accelerator / Web IDE",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This project's objective is to enhance code processing speed. It utilizes Facebook's Pytorch library on an FPGA card system in the AWS cloud. Efficiency gains are achieved through a web interface or Python CLI, and by reengineering Pytorch's lower-level functions using OpenCL.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Pytorch",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "AWS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: projet4,
     sourceCodeLink: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Video Colorization - Deep Learning",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Employing a full-convolution architecture, it transforms grayscale videos into its color version. It leverages a dataset of 40,000 ImageNet images for its training process, demonstrating the application of deep learning in image colorization.",
     tags: [
       {
-        name: "nextjs",
+        name: "Pytorch",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Keras",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Numpy",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: colorization,
     sourceCodeLink: "https://github.com/",
   },
+  {
+    name: "Web Games - Crossword",
+    description:
+      "Multiplayer crossword game for browsers. Real-time communication is done via socket.io, and the algorithm for generating a 10x10 grid is completed in less than 10 seconds.",
+    tags: [
+      {
+        name: "Angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: motscroises,
+    sourceCodeLink: "https://github.com/",
+  },
+  {
+    name: "Web Games - Car Racing",
+    description:
+      "3D car racing game using the Threejs library. The player has the ability to create their own tracks and compete against AI of varying skill levels.",
+    tags: [
+      {
+        name: "Angular",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "WebGL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Threejs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jeudecourse,
+    sourceCodeLink: "https://github.com/",
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };

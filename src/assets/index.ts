@@ -26,9 +26,32 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+import desjardins from "./company/desjardins.png";
+import groupeazur from "./company/groupeazur.png";
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import kubernetes from "./tech/kubernetes.png";
+import angular from "./tech/angular.png";
+
+import cpp from "./tech/cpp.png";
+import csharp from "./tech/csharp.png";
+import python from "./tech/python.png";
+import sql from "./tech/sql.png";
+import azure from "./tech/azure.png";
+import java from "./tech/java.png";
+import gradle from "./tech/gradle.png";
+import maven from "./tech/maven.png";
+
+import colorization from "./colorization.png";
+import jeudecourse from "./jeudecourse.png";
+import motscroises from "./motscroises.png";
+import projet4 from "./projet4.png";
+import projetperso from "./projetperso.png";
+
+import thiago from "./thiago.jpeg"
 
 export {
   logo,
@@ -59,4 +82,22 @@ export {
   carrent,
   jobit,
   tripguide,
+  kubernetes,
+  angular,
+  cpp,
+  csharp,
+  python,
+  sql,
+  azure,
+  java,
+  gradle,
+  maven,
+  desjardins,
+  groupeazur,
+  colorization,
+  jeudecourse,
+  motscroises,
+  projet4,
+  projetperso,
+  thiago
 };

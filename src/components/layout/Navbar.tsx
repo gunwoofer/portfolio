@@ -78,7 +78,8 @@ const Navbar = () => {
                 active === nav.id ? "text-white" : "text-secondary"
               } cursor-pointer text-[18px] font-medium hover:text-white`}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={nav.id === "pdf" ? "/cv.pdf" : `#${nav.id}`} target={nav.id === "pdf" ? "_blank" : "_self"}>{nav.title}</a>
+
             </li>
           ))}
         </ul>
@@ -107,7 +108,8 @@ const Navbar = () => {
                     setToggle(!toggle);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={nav.id === "pdf" ? "/assets/cv.pdf" : `#${nav.id}`} target={nav.id === "pdf" ? "_blank" : "_self"}>{nav.title}</a>
+
                 </li>
               ))}
             </ul>

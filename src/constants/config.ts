@@ -33,6 +33,7 @@ type TConfig = {
   sections: {
     about: Required<TSection>;
     experience: TSection;
+    tech: TSection;
     feedbacks: TSection;
     works: Required<TSection>;
   };
@@ -40,13 +41,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Valentin Bouis — Software Engineer",
+    fullName: "Valentin Bouis",
+    email: "valentin.bouis@gmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Valentin",
+    p: ["I'm a software engineer", "Fullstack developer and DevOps"],
   },
   contact: {
     p: "Get in touch",
@@ -59,7 +60,7 @@ export const config: TConfig = {
       email: { span: "Your Email", placeholder: "What's your email?" },
       message: {
         span: "Your Message",
-        placeholder: "What do you want to say?",
+        placeholder: "What do you want to say ?",
       },
     },
   },
@@ -67,28 +68,28 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
+      content: `Software Engineer with over 3 years of experience in full-stack development and leading product
+      cycle from conception to completion. I enjoy solving problems, both on a professional and personal
+      level. I'm a quick learner and collaborate closely with clients to
       create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      real-world problems. I am never done learning and am ready for new challenges !`,
     },
     experience: {
       p: "What I have done so far",
       h2: "Work Experience.",
+    },
+    tech: {
+      p: "Languages I speak...",
+      h2: "Technologies I master..."
     },
     feedbacks: {
       p: "What others say",
       h2: "Testimonials.",
     },
     works: {
-      p: "My work",
+      p: "Some of my work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: ``,
     },
   },
 };

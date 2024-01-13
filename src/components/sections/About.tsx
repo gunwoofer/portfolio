@@ -14,7 +14,7 @@ interface IServiceCard {
   icon: string;
 }
 
-const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
+export const ServiceCard: React.FC<IServiceCard> = ({ index, title, icon }) => (
   <Tilt
     glareEnable
     tiltEnable
