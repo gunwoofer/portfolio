@@ -13,9 +13,9 @@ const INITIAL_STATE = Object.fromEntries(
 );
 
 const emailjsConfig = {
-  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  templateId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  accessToken: import.meta.env.VITE_EMAILJS_ACCESS_TOKEN,
+  serviceId: import.meta.env.VITE_REACT_APP_EMAILJS_USERID,
+  templateId: import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATEID,
+  accessToken: import.meta.env.VITE_REACT_APP_EMAILJS_RECEIVERID,
 };
 
 const Contact = () => {
@@ -35,7 +35,7 @@ const Contact = () => {
     if (e === undefined) return;
     e.preventDefault();
     setLoading(true);
-
+    console.log(emailjsConfig);
     emailjs
       .send(
         emailjsConfig.serviceId,
